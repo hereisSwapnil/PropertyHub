@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import Login from "./components/Login";
+import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import UserDataForm from "./components/UserDataForm/UserDataForm";
 import Forgot from "./components/Forgot/Forgot";
@@ -52,12 +52,12 @@ function App() {
   }, []);
   return (
     <Routes>
-      <Route path="/" element={<Login account={Account} />} />
-      <Route path="/get" element={<MainPage />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+      <Route path="/" element={<Login />} />
+      <Route path="/get" element={<MainPage account={Account} />} />
+      {/* <Route path="/login" element={<Login />} /> */}
+      {/* <Route path="/register" element={<Register />} /> */}
       <Route path="/data" element={<UserDataForm />} />
-      <Route path="/forgot" element={<Forgot />} />
+      {/* <Route path="/forgot" element={<Forgot />} /> */}
       <Route path="/property/:id" element={<SinglePage />} />
       <Route path="/add" element={<AddProperty />} />
       <Route path="/map" element={<MapView />} />

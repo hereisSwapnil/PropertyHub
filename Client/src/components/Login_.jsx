@@ -1,4 +1,4 @@
-const Login = (props) => {
+const Login_ = (props) => {
   return (
     <>
       <div>
@@ -11,3 +11,4 @@ const Login = (props) => {
 };
 
 export default Login;
+
