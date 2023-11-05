@@ -1,12 +1,26 @@
-# FindMyCasa
-**FindMyCasa** is a solution that addresses the following problem:
-1. Some People are not knowledgeable enough about the property documents.
-2. Each time someone purchases or sell a property the 
+# PropertyHub
+
+**PropertyHub** is a pioneering solution designed to tackle the following issues in real estate transactions:
+
+1. **Insufficient Knowledge About Property Documents**: Many individuals lack the necessary expertise to comprehend property documentation adequately.
+
+2. **Repetitive Verification in Property Transactions**: With each property purchase or sale, there is often a need for redundant verification processes, leading to inefficiencies and delays.
+
+3. **Complexities of Power of Attorney**: Dealing with Power of Attorney documents can be convoluted and pose significant challenges in property transactions.
+
+4. **Land Tax Management**: Properly managing and calculating land taxes can be a cumbersome and error-prone process.
 
 ## Solution
-We have developed a solution to solve the above problems of transparency between the seller and buyer when a property is transacted.
-Our solution consists of a web interface that can connect will the blockchain wallet and can perform transaction when adding a property data to the blockchain, a proper verification of the property will be done after the submission of all the documents and details for property.
-This will lead to the one time verification of the the property and making a realtime track for it.
+
+In response to these challenges, we have created a comprehensive solution that leverages React for the web interface and Solidity for blockchain integration. Our platform seamlessly integrates with blockchain wallets, streamlining property data transactions. After the submission of extensive property documentation and details, our system initiates a meticulous property verification process. This approach ensures a one-time property verification, thereby enabling real-time tracking capabilities for all stakeholders.
+
+**Dealing with Power of Attorney**: PropertyHub simplifies the process of handling Power of Attorney documents by securely storing and managing them within the blockchain. This reduces the complexities associated with these documents, streamlining property transactions.
+
+**Efficient Land Tax Management**: The platform includes a feature to accurately calculate and manage land taxes. By automating this process and ensuring compliance with tax regulations, PropertyHub helps users avoid potential tax-related issues.
+
+## Powerpoint Presentation Link
+
+[Link to powerpoint]()
 
 ## Table of Contents
 
@@ -33,41 +47,35 @@ To set up the project locally, follow these steps:
    npm install
    ```
 
-3. Configure any environment variables or settings required.
+3. Configure any required environment variables or settings.
 
 ## Usage
 
-How to use your project:
+Here's how to use the project:
 
 - Start the development server:
 
   ```bash
-  npm start
+  npm run dev
   ```
 
 - Access the application at [http://localhost:3000](http://localhost:3000).
 
 ## Features
 
-List the key features of your project:
+Key features of the project include:
 
-- Feature 1: ...
-- Feature 2: ...
-- ...
-
-## Contributing
-
-We welcome contributions! If you'd like to contribute to this project:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes.
-4. Submit a pull request.
+- Feature 1: Streamlined property data transactions.
+- Feature 2: Comprehensive property document verification.
+- Feature 3: Real-time tracking of property transactions.
+- Feature 4: Integration with blockchain wallets.
+- Feature 5: Simplified handling of Power of Attorney documents.
+- Feature 6: Efficient land tax management.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
 
 ---
 
-Feel free to add more sections or customize the content as needed. Good luck with your hackathon! 🚀👩‍💻👨‍💻
+Feel free to modify the content or add additional sections as required. Best of luck with your hackathon! 🚀👩‍💻👨‍💻
