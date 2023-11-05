@@ -4,6 +4,7 @@ import validate from "../../common/validation";
 import hide from "../../assets/hide.png";
 import show from "../../assets/show.png";
 import { FaSyncAlt, FaEnvelope, FaKey, FaShieldVirus } from "react-icons/fa";
+import logo from "../../assets/logo.svg";
 
 const Login_ = () => {
   return (
@@ -11,12 +12,10 @@ const Login_ = () => {
       {/* <!-- Login Section --> */}
       <div className="flex w-full flex-col md:w-1/2">
         <div className="flex justify-center pt-12 md:-mb-24 md:justify-start md:pl-12">
-          <a href="#" className="bg-black p-4 text-xl font-bold text-white">
-            Logo
-          </a>
+          <img src={logo} alt="" className="h-[240px] mx-auto pr-12" />
         </div>
 
-        <div className="my-auto flex flex-col justify-center px-8 md:justify-start md:px-24 md:pt-0 lg:px-32">
+        <div className="my-auto flex flex-col justify-center px-8 md:justify-start md:px-24 md:pt-0 lg:px-32 text-center">
           <p className="text-3xl">Finding Home made</p>
           <p className="text-sm text-gray-500 mt-2">
             Easy &nbsp; &nbsp; • &nbsp; &nbsp; Transparent &nbsp; &nbsp; •
