@@ -59,7 +59,7 @@ function App() {
       <Route path="/data" element={<UserDataForm />} />
       {/* <Route path="/forgot" element={<Forgot />} /> */}
       <Route path="/property/:id" element={<SinglePage />} />
-      <Route path="/add" element={<AddProperty />} />
+      <Route path="/add" element={<AddProperty  state={state} account={Account}/>} />
       <Route path="/map" element={<MapView />} />
     </Routes>
   );

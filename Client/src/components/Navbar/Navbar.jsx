@@ -3,23 +3,24 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../../assets/logo_text.png";
 
-const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Add Property", href: "/add", current: false },
-  { name: "Map View", href: "/map", current: false },
-  { name: "My Properties", href: "/add", current: false },
-];
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = (props) => {
-  const [prop, setprop] = useState("");
-  useEffect(() => {
-    console.log("Hello");
-    setprop(props.prop);
-  }, [props]);
+  
+  const navigation = [
+    { name: "Home", href: "/", current: true },
+    { name: "Add Property", href: "/add", current: false },
+    { name: "Map View", href: "/map", current: false },
+    { name: "My Properties", href: "/add", current: false },
+    { name: `Account  :     ${props.account} `, href: "#", current: false },
+
+    
+  ];
+console.log(props.account)
   return (
     <Disclosure as="nav" className="bg-gray-900">
       {({ open }) => (
@@ -99,7 +100,7 @@ const Navbar = (props) => {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>{prop}</Menu.Item>
+                      <Menu.Item>{props.account}</Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
                           <a
