@@ -22,9 +22,16 @@ const Login_ = () => {
             Easy &nbsp; &nbsp; • &nbsp; &nbsp; Transparent &nbsp; &nbsp; •
             &nbsp; &nbsp; Verified{" "}
           </p>
-          <button onClick={handleButtonClick}>Send Data to Child</button>
+          {/* <button onClick={'handleButtonClick'}>Login</button> */}
+          <form action="/get">
+            <input
+              type="submit"
+              value="Log In"
+              className="bg-black p-2 mt-5 text-lg font-bold text-white cursor-pointer hover:bg-gray-700"
+            />
+          </form>
           {/* Render the ChildComponent and pass the data as a prop */}
-          <ChildComponent data={dataToSend} />
+          {/*<ChildComponent data={'dataToSend'} /> */}
         </div>
       </div>
 

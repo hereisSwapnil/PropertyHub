@@ -102,7 +102,6 @@ const AddProperty = () => {
                 onChange={handleFormData}
                 value={formData.title}
                 className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-5 w-full bg-gray-50 pr-12"
-                required
               />
             </div>
           </div>
@@ -119,7 +118,6 @@ const AddProperty = () => {
                 onChange={handleFormData}
                 value={formData.description}
                 className="focus:shadow-outline peer h-auto appearance-none py-2 leading-tight text-gray-700 shadow border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                required
                 cols="10"
                 rows="10"
               ></textarea>
@@ -140,7 +138,6 @@ const AddProperty = () => {
                   onChange={handleFormData}
                   value={formData.name}
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -159,7 +156,6 @@ const AddProperty = () => {
                   onChange={handleFormData}
                   value={formData.mobile}
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                  disabled
                 />
                 {/* SVG */}
               </div>
@@ -181,7 +177,6 @@ const AddProperty = () => {
                   onChange={handleFormData}
                   value={formData.email}
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                  disabled
                 />
                 {/* SVG */}
               </div>
@@ -239,7 +234,6 @@ const AddProperty = () => {
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
                   onChange={handleFormData}
                   value={formData.landType}
-                  required
                 >
                   <option value="residential">Residential</option>
                   <option value="commercial">Commercial</option>
@@ -265,7 +259,6 @@ const AddProperty = () => {
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
                   value="INR"
                   onChange={handleFormData}
-                  disabled
                 >
                   <option value="inr">INR</option>
                   <option value="usd">USD</option>
@@ -291,7 +284,6 @@ const AddProperty = () => {
                   onChange={handleFormData}
                   value={formData.lat}
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -310,7 +302,6 @@ const AddProperty = () => {
                   onChange={handleFormData}
                   value={formData.long}
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -331,7 +322,6 @@ const AddProperty = () => {
                 onChange={handleFormData}
                 value={formData.address}
                 className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-5 w-full bg-gray-50 pr-12"
-                required
               />
             </div>
           </div>
@@ -351,7 +341,6 @@ const AddProperty = () => {
                   onChange={handleFormData}
                   value={formData.pincode}
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -370,7 +359,6 @@ const AddProperty = () => {
                   onChange={handleFormData}
                   value={formData.city}
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -393,7 +381,6 @@ const AddProperty = () => {
                   onChange={handleFormData}
                   value={formData.state}
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -412,7 +399,6 @@ const AddProperty = () => {
                   onChange={handleFormData}
                   value={formData.country}
                   className="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -438,7 +424,6 @@ const AddProperty = () => {
                   class="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
                   type="file"
                   id="formFile"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -454,7 +439,6 @@ const AddProperty = () => {
                   class="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
                   type="file"
                   id="formFile"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -474,7 +458,6 @@ const AddProperty = () => {
                   class="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
                   type="file"
                   id="formFile"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -509,7 +492,6 @@ const AddProperty = () => {
                   class="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
                   type="file"
                   id="formFile"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -525,7 +507,6 @@ const AddProperty = () => {
                   class="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
                   type="file"
                   id="formFile"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -560,7 +541,6 @@ const AddProperty = () => {
                   class="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
                   type="file"
                   id="formFile"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -595,7 +575,6 @@ const AddProperty = () => {
                   class="focus:shadow-outline peer appearance-none py-2 leading-tight text-gray-700 shadow h-10 border mt-1 rounded px-4 w-full bg-gray-50 pr-12"
                   type="file"
                   id="formFile"
-                  required
                 />
                 {/* SVG */}
               </div>
@@ -632,7 +611,6 @@ const AddProperty = () => {
                   placeholder="Enter Captcha Here"
                   onChange={(e) => setCaptchaVal(e.target.value)}
                   className="w-full peer bg-slate-100 py-2 px-6"
-                  required
                 />
                 <FaShieldVirus className="icons absolute top-[12px] left-[5px]" />
               </div>
