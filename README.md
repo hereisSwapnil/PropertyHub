@@ -1,19 +1,12 @@
 # FindMyCasa
-
-
-## Description
-
-**FindMyCasa** is a solution that addresses the following problem: _[Describe the problem statement or challenge you're tackling in the hackathon.]_
-
-Our solution leverages [technologies/tools/frameworks] to provide a [brief description of your solution]. Whether it's an app, a web service, or an algorithm, explain how it works and what makes it unique.
-
-## Problem Statement
-
-_[Provide a detailed description of the problem you're solving. What pain points does it address? Who are the target users? What impact will it have?]_
+**FindMyCasa** is a solution that addresses the following problem:
+1. Some People are not knowledgeable enough about the property documents.
+2. Each time someone purchases or sell a property the 
 
 ## Solution
-
-_[Describe your solution in detail. How does it work? What features does it offer? How does it improve upon existing solutions?]_
+We have developed a solution to solve the above problems of transparency between the seller and buyer when a property is transacted.
+Our solution consists of a web interface that can connect will the blockchain wallet and can perform transaction when adding a property data to the blockchain, a proper verification of the property will be done after the submission of all the documents and details for property.
+This will lead to the one time verification of the the property and making a realtime track for it.
 
 ## Table of Contents
 
