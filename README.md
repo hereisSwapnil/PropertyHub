@@ -72,6 +72,18 @@ Key features of the project include:
 - Feature 5: Simplified handling of Power of Attorney documents.
 - Feature 6: Efficient land tax management.
 
+## Team Members
+Team Name - LogicLegends
+
+[Harsh Sharma](https://github.com/HarshSharma0801)
+<br>
+[Swapnil Singh](https://github.com/Swapnil-Singh-99)
+<br>
+[Nitish Kumar Gupta](https://github.com/nitish12rm)
+<br>
+[Shiven](https://github.com/Nevish-302)
+<br>   
+
 ## License
 
 This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
