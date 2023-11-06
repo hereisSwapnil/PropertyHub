@@ -22,6 +22,11 @@ In response to these challenges, we have created a comprehensive solution that l
 
 [Link to powerpoint]()
 
+## Video Presentation Link
+
+[https://www.youtube.com/watch?v=jdGckSiiJCE]()
+
+
 ## Table of Contents
 
 - [Installation](#installation)
