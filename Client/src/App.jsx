@@ -20,6 +20,8 @@ function App() {
     contract: null,
   });
   const [Account, setAccount] = useState("Not connected");
+
+
   const template = async () => {
     const CAddres = contractAddress;
     const CABI = ABI;
@@ -40,8 +42,8 @@ function App() {
       console.log(signer);
       const contract = new ethers.Contract(CAddres, CABI, signer);
 
-      console.log(contract);
-      setState({ provider, signer, contract });
+        console.log(contract);
+     contract && setState({ provider, signer, contract });
     } catch (error) {
       console.log(error);
     }
@@ -58,13 +60,13 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login clicked={clicked} account={Account}/>} />
-      <Route path="/get" element={<MainPage account={Account} />} />
+      <Route path="/get" element={<MainPage account={Account} clicked={clicked} />} />
       {/* <Route path="/login" element={<Login />} /> */}
       {/* <Route path="/register" element={<Register />} /> */}
       <Route path="/data" element={<UserDataForm />} />
       {/* <Route path="/forgot" element={<Forgot />} /> */}
       <Route path="/property/:id" element={<SinglePage />} />
-      <Route path="/add" element={<AddProperty  state={state} account={Account}/>} />
+      <Route path="/add" element={<AddProperty  state={state} clicked={clicked} account={Account}/>} />
       <Route path="/map" element={<MapView />} />
     </Routes>
   );
