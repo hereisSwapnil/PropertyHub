@@ -10,17 +10,33 @@ function classNames(...classes) {
 }
 
 const Navbar = (props) => {
+ const [accountId , setAccount] = useState(props.account);
+  
+useEffect(()=>{
+
+  const GetAccount = async()=>{
+    const account = await ethereum.request({
+      method: "eth_requestAccounts",
+    });
+    window.ethereum.on("accountsChanged", () => {
+      window.location.reload();
+    });
+    account && setAccount(account[0]);
+  }
+  GetAccount();
+
+},[])
   
   const navigation = [
     { name: "Home", href: "/", current: true },
     { name: "Add Property", href: "/add", current: false },
     { name: "Map View", href: "/map", current: false },
     { name: "My Properties", href: "/add", current: false },
-    { name: `Account  :     ${props.account} `, href: "#", current: false },
+    { name: `Account  :     ${accountId} `, href: "#", current: false },
 
     
   ];
-console.log(props.account)
+console.log(accountId)
   return (
     <Disclosure as="nav" className="bg-gray-900">
       {({ open }) => (
@@ -100,7 +116,7 @@ console.log(props.account)
                     leaveTo="transform opacity-0 scale-95"
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>{props.account}</Menu.Item>
+                      <Menu.Item>{}</Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
                           <a

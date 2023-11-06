@@ -54,20 +54,6 @@ function App() {
 
    }
 
-useEffect(()=>{
-
-  const GetAccount = async()=>{
-    const account = await ethereum.request({
-      method: "eth_requestAccounts",
-    });
-    window.ethereum.on("accountsChanged", () => {
-      window.location.reload();
-    });
-    account && setAccount(account[0]);
-  }
-  GetAccount();
-
-},[])
 
   return (
     <Routes>
