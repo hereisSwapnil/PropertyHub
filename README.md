@@ -24,11 +24,11 @@ In response to these challenges, we have created a comprehensive solution that l
 
 ## Video Presentation Link
 
-[https://www.youtube.com/watch?v=jdGckSiiJCE]()
+https://www.youtube.com/watch?v=jdGckSiiJCE
 
 ## Live Demo Link
 
-[https://propertyhub.vercel.app/]()
+https://propertyhub.vercel.app/
 
 
 ## Table of Contents
