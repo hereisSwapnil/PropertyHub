@@ -4,16 +4,62 @@ import { FaSyncAlt, FaEnvelope, FaKey, FaShieldVirus } from "react-icons/fa";
 import {ethers} from 'ethers'
 import Navbar from "../Navbar/Navbar";
 import SidePanel from "../Home/Sidepanel";
+import ABI from "../../constants/ABI";
+import contractAddress from "../../constants/contractAddress";
 
-const AddProperty = ({state , account} ) => {
 
-const Main = (state.contract);
 
-console.log(Main)
+const AddProperty = ({state , account ,clicked} ) => {
+  const [getState, setState] = useState({
+    provider: null,
+    signer: null,
+    contract: null,
+  });
+
+  const [Main , setMain] = useState();
+
+useEffect(()=>{
+  
+ const getContract = async()=>{
+  console.log("hi")
+  const CAddres = contractAddress;
+  const CABI = ABI;
+  try {
+    const { ethereum } = window;
+    const account = await ethereum.request({
+      method: "eth_requestAccounts",
+    });
+    window.ethereum.on("accountsChanged", () => {
+      window.location.reload();
+    });
+    const provider = new ethers.providers.Web3Provider(ethereum); //read the Blockchain
+    console.log(provider);
+    const signer = provider.getSigner(); //write the blockchain
+    console.log(signer);
+    const contract = new ethers.Contract(CAddres, CABI, signer);
+
+      console.log(contract);
+      getState && setMain(contract);
+
+   contract && setState({ provider, signer, contract });
+  } catch (error) {
+    console.log(error);
+  }
+  
+ }
+ getContract();
+},[])
+
+
+
+
+
 
   const submitted =async(event)=>{
     event.preventDefault();
-    console.log("submit")
+    console.log("submit");
+    console.log(Main);
+
   
 
     const name = document.querySelector("#name").value;
@@ -31,6 +77,7 @@ console.log(Main)
     await transaction.wait();
     alert("Transaction is successul");
     window.location.reload();
+    
   }
 
   return (
@@ -213,7 +260,7 @@ Property Address            </label>
           </div>
 
           <div>
-            <input className="bg-black text-white p-2 m-16" type="submit" value="MAKE YOUR TRANSACTION" disabled={!state.contract}/>
+          <button className="bg-black text-white p-2 m-16 rounded-xl " type="submit"disabled={!getState}>Make Traction </button>
           </div>
 
       
