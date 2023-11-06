@@ -6,7 +6,16 @@ import show from "../../assets/show.png";
 import { FaSyncAlt, FaEnvelope, FaKey, FaShieldVirus } from "react-icons/fa";
 import logo from "../../assets/logo.svg";
 
-const Login_ = () => {
+const Login_ = (props) => {
+    
+  const clicked =()=>{
+   console.log(props.account);
+   props.clicked();
+
+  }
+
+
+
   return (
     <div className="flex w-full flex-wrap">
       {/* <!-- Login Section --> */}
@@ -22,13 +31,15 @@ const Login_ = () => {
             &nbsp; &nbsp; Verified{" "}
           </p>
           {/* <button onClick={'handleButtonClick'}>Login</button> */}
-          <form action="/get">
+          {/* <form onSubmit={clicked}>
             <input
               type="submit"
               value="Log In"
               className="bg-black p-2 mt-5 text-lg font-bold text-white cursor-pointer hover:bg-gray-700"
             />
-          </form>
+          </form> */}
+
+          <button onClick={clicked} className="bg-black p-2 mt-5 text-lg font-bold text-white cursor-pointer hover:bg-gray-700">Connect to Wallet</button>
           {/* Render the ChildComponent and pass the data as a prop */}
           {/*<ChildComponent data={'dataToSend'} /> */}
         </div>
