@@ -23,9 +23,8 @@ function App() {
     const template = async () => {
       const CAddres = contractAddress;
       const CABI = ABI;
-      //Metamask part
-      //1. In order do transactions on goerli testnet
-      //2. Metmask consists of infura api which actually help in connectig to the blockhain
+      //Metamask Wallet Connection
+      
       try {
         const { ethereum } = window;
         const account = await ethereum.request({

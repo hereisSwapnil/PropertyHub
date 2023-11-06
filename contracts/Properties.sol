@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
-
+//Defining Owner
 contract Properties {
     address payable owner;
 
     constructor() {
         owner = payable(msg.sender);
     }
-
+//Defining Structure of Data
     struct Owner {
         string name;
         string mobile;
