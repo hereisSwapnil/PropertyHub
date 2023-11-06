@@ -22,6 +22,11 @@ In response to these challenges, we have created a comprehensive solution that l
 
 [Link to powerpoint]()
 
+## Video Presentation Link
+
+[https://www.youtube.com/watch?v=jdGckSiiJCE]()
+
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -75,7 +80,7 @@ Key features of the project include:
 ## Team Members
 Team Name - LogicLegends
 
-[Harsh Sharma](https://github.com/HarshSharma0801)
+[Harsh Sharma - Leader](https://github.com/HarshSharma0801)
 <br>
 [Swapnil Singh](https://github.com/Swapnil-Singh-99)
 <br>
