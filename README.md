@@ -96,7 +96,3 @@ Team Name - LogicLegends
 ## License
 
 This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
-
----
-
-Feel free to modify the content or add additional sections as required. Best of luck with your hackathon! 🚀👩‍💻👨‍💻
