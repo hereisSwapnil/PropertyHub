@@ -92,7 +92,3 @@ Team Name - LogicLegends
 <br>
 [Shiven](https://github.com/Nevish-302)
 <br>   
-
-## License
-
-This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
